@@ -12,7 +12,7 @@ import android.view.ViewAnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class ActivityTransition extends AppCompatActivity {
+public class ActivityTransition extends AppCompatActivity implements View.OnClickListener{
    private TextView mText;
    private ImageView mImageView1, mImageView2;
    private TextView mCircularReveal;
@@ -68,5 +68,18 @@ public class ActivityTransition extends AppCompatActivity {
             reveal.start();
         }
 
+    }
+
+    @Override
+    public void onClick(View v) {
+          switch(v.getId()){
+              case R.id.explode_java_button:break;
+              case R.id.explode_xml_button:break;
+              case R.id.slide_java_button:break;
+              case R.id.slide_xml_button: break;
+              case R.id.fade_java_button:break;
+              case R.id.fade_xml_button:break;
+              default:break;
+          }
     }
 }
