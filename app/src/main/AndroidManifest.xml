@@ -19,7 +19,8 @@
         <activity android:name=".TouchFeedBackAnimation" />
         <activity android:name=".ActivityTransition" />
         <activity android:name=".SharedElementsActivity" />
-        <activity android:name=".ActivityTransition2"></activity>
+        <activity android:name=".ActivityTransition2" />
+        <activity android:name=".CircularRevealActivity"></activity>
     </application>
 
 </manifest>

@@ -5,6 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.transition.Slide;
+import android.view.Gravity;
 import android.view.ViewGroup;
 
 import java.util.ArrayList;
@@ -20,7 +22,23 @@ public class MainActivity extends AppCompatActivity {
         mRecyclerVeiw=findViewById(R.id.recyclerView);
         initList();
         initRecycler();
+        setupWindowAnimations();
         }
+
+
+        //For backactivity transition
+    private void setupWindowAnimations() {
+        // Re-enter transition is executed when returning back to this activity
+        Slide slideTransition = new Slide();
+        slideTransition.setSlideEdge(Gravity.LEFT); // Use START if using right - to - left locale
+        slideTransition.setDuration(1000);
+
+        getWindow().setReenterTransition(slideTransition);  // When MainActivity Re-enter the Screen
+        getWindow().setExitTransition(slideTransition);     // When MainActivity Exits the Screen
+
+        // For overlap of Re Entering Activity - MainActivity.java and Exiting TransitionActivity.java
+        getWindow().setAllowReturnTransitionOverlap(false);
+    }
 
     private void initRecycler() {
         AdapterCalss adapter = new AdapterCalss(this, mActivtiyList);
@@ -32,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
         ArrayList<ModelClass> temp=new ArrayList<>();
               temp.add(new ModelClass("TouchFeedBackAnimation"));
         temp.add(new ModelClass("ActivityTransition"));
-        temp.add(new ModelClass("ActivtiyThree"));
+        temp.add(new ModelClass("CircularRevealActivity"));
         temp.add(new ModelClass("ActivtiyFour"));
         temp.add(new ModelClass("ActivtiyFive"));
         mActivtiyList=temp;
