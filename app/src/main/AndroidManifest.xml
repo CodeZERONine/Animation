@@ -20,7 +20,8 @@
         <activity android:name=".ActivityTransition" />
         <activity android:name=".SharedElementsActivity" />
         <activity android:name=".ActivityTransition2" />
-        <activity android:name=".CircularRevealActivity"></activity>
+        <activity android:name=".CircularRevealActivity" />
+        <activity android:name=".Empty"></activity>
     </application>
 
 </manifest>
