@@ -23,6 +23,7 @@ public class ActivityTransition2 extends AppCompatActivity {
         getWindow().requestFeature(Window.FEATURE_CONTENT_TRANSITIONS);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_transition2);
+        //getWindow().setAllowReturnTransitionOverlap(false);
         initPAGE();
         initTransition();
     }

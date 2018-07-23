@@ -51,8 +51,13 @@ public class MainActivity extends AppCompatActivity {
               temp.add(new ModelClass("TouchFeedBackAnimation"));
         temp.add(new ModelClass("ActivityTransition"));
         temp.add(new ModelClass("CircularRevealActivity"));
-        temp.add(new ModelClass("ActivtiyFour"));
-        temp.add(new ModelClass("ActivtiyFive"));
+        temp.add(new ModelClass("MoveViewActivity"));
+        temp.add(new ModelClass("MoveViewCurverd"));
+        temp.add(new ModelClass("FlingMotion"));
+        temp.add(new ModelClass("EnlargeViewZoom"));
+        temp.add(new ModelClass("Spring"));
+
+
         mActivtiyList=temp;
         }
 }

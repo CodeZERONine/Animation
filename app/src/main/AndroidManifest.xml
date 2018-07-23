@@ -21,7 +21,12 @@
         <activity android:name=".SharedElementsActivity" />
         <activity android:name=".ActivityTransition2" />
         <activity android:name=".CircularRevealActivity" />
-        <activity android:name=".Empty"></activity>
+        <activity android:name=".Empty" />
+        <activity android:name=".MoveViewActivity" />
+        <activity android:name=".MoveViewCurverd" />
+        <activity android:name=".FlingMotion" />
+        <activity android:name=".EnlargeViewZoom" />
+        <activity android:name=".Spring"></activity>
     </application>
 
 </manifest>
